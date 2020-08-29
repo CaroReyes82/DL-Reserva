@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <style>
+      .container {
+          background-color: rgb(10, 11, 92);
+          color: rgb(240, 233, 233);
+          align-items: center;
+          width: 400px;
+          text-align: center;
+          border-radius: 50px;
+          border-color: 1px black;
+          font-family: "Varela Round", sans-serif;
+          padding-bottom: 40px;
+          margin-top: 40px;
+      }
+
+      body {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .titulo {
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          height: 30px;
+
+      }
+
+      .reservar{
+          padding left: 40px;
+          padding right: 40px;
+          border-radius: 5px;
+          background-color: cornflowerblue;
+      }
+
+      input{
+            border-radius: 5px;
+            width:200px ;
+      }
+
+      .alerta{
+        width: 250px;
+        height: 80Px;
+        
+        color:rgb(255, 255, 255); 
+        
+      }
+    </style>
+    <title>Reserva de Horas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="titulo"><h2>Reserva de Horas</h2></div>
+      <div class="alerta" id="error"></div>
+      <br />
+
+      <form id="formulario">
+        <label for="rut">Rut</label>
+        <p>
+          <input class="rut" type="text" class="rut" />
+        </p>
+        <p><label for="Nombre">Nombre</label></p>
+        <p><input type="text" class="nombre" /></p>
+        <p><label for="Apellido">Apellido</label></p>
+        <p><input type="text" class="apellido" /></p>
+        <p><label for="Edad">Edad</label></p>
+        <p><input type="number" class="edad" /></p>
+        <p><label for="email">E-mail</label></p>
+        <p><input type="text" class="email" /></p>
+        <label for="Especialidad">Selecciona Especialidad</label>
+        <p>
+          <select name="es" id="Especialidades">
+            <option value="1">Traumatología</option>
+            <option value="2">Pediatría</option>
+            <option value="3">Odontología</option>
+            <option value="3">Radiología</option>
+          </select>
+        </p>
+
+        <p><label for="Fecha"> Ingrese Fecha</label></p>
+        <p><input type="texto" class="fecha"  placeholder="11/07/2020"/></p>
+
+        <p><label for="start">Selecione una hora</label></p>
+
+        <p>
+          <select name="es" id="Hora">
+            <option value="1">10:00</option>
+            <option value="2">10:30</option>
+            <option value="3">11:00</option>
+            <option value="3">11:30</option>
+          </select>
+        </p>
+        <br />
+
+        <button type="submit" class="reservar">Reservar</button>
+      </form>
+    </div>
+  </body>
+</html>

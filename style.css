@@ -1,0 +1,39 @@
+.container {
+    background-color: rgb(10, 11, 92);
+    color: rgb(240, 233, 233);
+    align-items: center;
+    width: 400px;
+    text-align: center;
+    border-radius: 50px;
+    border-color: 1px black;
+    font-family: "Varela Round", sans-serif;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 30px;
+    
+}  
+
+.reservar{
+      padding left: 40px;
+      padding right: 40px;
+      border-radius: 5px;
+      background-color: cornflowerblue;
+}  
+
+input{
+      border-radius: 5px;
+      width:200px ;
+}  
+  
